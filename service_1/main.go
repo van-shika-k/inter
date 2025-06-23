@@ -26,8 +26,5 @@ func healthHandler(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("OK"))
 }
 
-http.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
-  w.WriteHeader(200)
-  w.Write([]byte("OK"))
-})
+
 
